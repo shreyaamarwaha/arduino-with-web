@@ -32,5 +32,6 @@ Instructions:
 
 This repository serves as a practical example of integrating web technologies with microcontrollers to create IoT applications. It can be used for educational purposes, prototyping projects, or as a basis for developing more complex IoT solutions. Contributions and feedback are welcome to enhance the functionality and usability of the application.
 
+![image](https://github.com/shreyaamarwaha/arduino-with-web/assets/113081204/d8896e28-b852-41a6-a2b9-3fe10a123b9d)
 
 PS: a picture of the circuit has been added for the reference as well:)
