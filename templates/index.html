@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlling a LED | flask | javascript | css | html</title>
+    <style>
+        body {
+            background-color: #292929; /* Black background */
+            color: #FFFFFF; /* White text */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #1c1c1c; /* Dark gray card background */
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            width: 400px;
+        }
+        .card:hover {
+            box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        button {
+            background-color: #9B30FF; 
+            color: #FFFFFF; 
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 15px;
+            font-size: 18px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        button:hover {
+            background-color: #6A0DAD; 
+            transform: translateY(-3px); /* Move up on hover */
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Tap to control the LED</h1>
+        <form action="/control" method="post">
+            <button type="submit" name="command" value="on">Turn On LED</button>
+            <button type="submit" name="command" value="off">Turn Off LED</button>
+        </form>
+    </div>
+</body>
+</html>
